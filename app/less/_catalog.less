@@ -1,0 +1,65 @@
+@import "_vars.less";
+
+.catalog {
+	position: fixed;
+	top: 0;
+	left: 80px;
+	padding: 30px 70px;
+	background-color: @yellow;
+	width: ~"calc(100% - 80px)";
+	height: 100%;
+	overflow-y: auto;
+	display: none;
+}
+.catalog__close {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	cursor: pointer;
+}
+.catalog__head {
+	display: flex;
+	width: 100%;  
+}
+.catalog__title {
+	font-weight: bold;
+	font-size: 36px;
+	text-transform: uppercase;
+	flex-grow:1;
+	text-align: center;
+	padding-right: 150px;
+	border-bottom: 1px solid @black;
+	margin-left: 65px;
+}
+.catalog__head__items {
+	margin-top: 20px;
+	//display: flex;
+	//flex-wrap: wrap;
+	display:grid;
+	grid-template-columns: repeat(auto-fill, minmax(160px, auto));
+	grid-gap: 20px;
+}
+.catalog__head__item {
+	border:1px solid white;
+	//width: 160px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 20px;
+	//margin-right: 20px;
+	//margin-bottom: 20px;
+}
+.catalog__head__item__icon {
+	width: 140px;
+	height: 140px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.catalog__head__item__title {
+	text-align: center;
+	padding: 20px;
+	font-size: 14px;
+	font-weight: 500;
+}

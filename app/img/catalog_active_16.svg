@@ -1,0 +1,17 @@
+<svg width="118" height="120" viewBox="0 0 118 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 120V66H2V120" stroke="white" stroke-width="3"/>
+<path d="M15 -1.07288e-06V36H2V-1.07288e-06" stroke="white" stroke-width="3"/>
+<path d="M116 -1.07288e-06V36H103V-1.07288e-06" stroke="white" stroke-width="3"/>
+<path d="M116 120V66H103V120" stroke="white" stroke-width="3"/>
+<rect x="2" y="50" width="114" height="16" fill="white" stroke="white" stroke-width="3"/>
+<rect x="59" y="36" width="57" height="14" stroke="white" stroke-width="3"/>
+<ellipse cx="69.7581" cy="43" rx="3.3871" ry="3.5" stroke="white" stroke-width="3"/>
+<ellipse cx="81.5322" cy="43" rx="3.3871" ry="3.5" stroke="white" stroke-width="3"/>
+<ellipse cx="93.3064" cy="43" rx="3.3871" ry="3.5" stroke="white" stroke-width="3"/>
+<ellipse cx="105.081" cy="43" rx="3.3871" ry="3.5" stroke="white" stroke-width="3"/>
+<rect x="2" y="36" width="57" height="14" stroke="white" stroke-width="3"/>
+<ellipse cx="12.3871" cy="43" rx="3.3871" ry="3.5" stroke="white" stroke-width="3"/>
+<ellipse cx="24.1613" cy="43" rx="3.3871" ry="3.5" stroke="white" stroke-width="3"/>
+<ellipse cx="35.9354" cy="43" rx="3.3871" ry="3.5" stroke="white" stroke-width="3"/>
+<ellipse cx="47.7096" cy="43" rx="3.3871" ry="3.5" stroke="white" stroke-width="3"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg width="115" height="129" viewBox="0 0 115 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M95 33H104.048V45H115" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M23 32H91" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M95 78.0667C84.1513 82.1546 71.8116 84.3225 57.9711 84.3225C43.5323 84.3225 30.1234 81.7447 19 77.3225" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M91 20V67.3262C81.4225 70.3328 69.4124 72 57.2394 72C44.8654 72 33.5352 70.275 23 67.172V20" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M61 72V56H83V69.4579" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M63 56C63 51.5822 67.03 48 72 48C76.97 48 81 51.5822 81 56" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M72 32V48" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M89.0748 1.54224H24.9253" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+<mask id="path-9-inside-1" fill="white">
+<path d="M24.8572 0L5 20H109L89.2108 0.112941"/>
+</mask>
+<path d="M5 20L2.87109 17.8863L-2.2061 23H5V20ZM109 20V23H116.217L111.127 17.8839L109 20ZM22.7283 -2.11371L2.87109 17.8863L7.12891 22.1137L26.9861 2.11371L22.7283 -2.11371ZM5 23H109V17H5V23ZM111.127 17.8839L91.3374 -2.00314L87.0843 2.22902L106.873 22.1161L111.127 17.8839Z" fill="white" mask="url(#path-9-inside-1)"/>
+<path d="M94 106H114" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M0 106H20" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+<rect x="18.5" y="18.5" width="77" height="109" stroke="white" stroke-width="3"/>
+</svg>

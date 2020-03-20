@@ -1,0 +1,64 @@
+@import "_vars.less";
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	color: @black;
+	box-sizing: border-box;
+}
+.hidden {
+	overflow: hidden;
+}
+.global__wrapper {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.content {
+	flex-grow: 1;
+	padding-left: 70px;
+}
+.title {
+	margin-top: 28px;
+	font-weight: bold;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+p {
+	margin-top: 15px;
+	font-weight: normal;
+	font-size: 20px;
+}
+.btn__big {
+	padding: 23px 60px;
+	border: none;
+	font-weight: bold;
+	font-size: 28px;
+	text-transform: uppercase;
+	cursor: pointer;
+	&.black {
+		background-color: @black;
+		color: white;
+	}
+}
+.upbtn {
+	cursor: pointer;
+	position: fixed;
+	bottom: 60px;
+	right: 60px;
+	transition: 0.3s;
+	transform: translateY(126px);
+	&.active {
+		transform: translateY(0);
+	}
+}
+@import "_leftnav.less";
+@import "_head.less";
+@import "_products.less";
+@import "_numeral_company.less";
+@import "_dilevery.less";
+@import "_contacts.less";
+@import "_footer.less";
+@import "_catalog.less";
