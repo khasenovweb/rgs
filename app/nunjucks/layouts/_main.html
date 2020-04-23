@@ -1,242 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>{{ title }}</title>
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-	<div id="global__wrapper" class="global__wrapper">
-		<!-- leftnav -->
-		<div class="leftnav">
-			<a data-click="catalog-open" href="">
-				<img src="img/nav_1.svg" alt="">
-			</a>
-			<a href="/">
-				<img src="img/nav_2.svg" alt="">
-			</a>
-			<a href="/">
-				<img src="img/nav_3.svg" alt="">
-			</a>
-		</div>
-		<!--END leftnav -->
-		<!-- content -->
-		<div class="content">
-			<!-- head -->
-			<div class="head">
-				<a href="/" class="head__logo">
-					<img src="img/logo.svg" alt="">
-				</a>
-				<div class="head__navblock">
-					<ul class="head__contacts">
-						<li><a href="tel:+7 (495) 642-33-81 ">+7 (495) 642-33-81</a></li>
-						<li><a href="mailto:sm@rgstroy.ru ">sm@rgstroy.ru</a></li>
-						<li>Пн-Пт 9:00 - 18:00</li>
-					</ul>
-					<ul class="head__nav">
-						<li><a href="/">Оплата</a></li>
-						<li><a href="/">Доставка</a></li>
-						<li><a href="/">О компании</a></li>
-						<li><a href="/">Как сделать заказ</a></li>
-						<li><a href="/">Контакты</a></li>
-					</ul>
-				</div>
-				<div class="head__cart">
-					<div class="head__cart__count">4</div>
-					<img src="img/cart.svg" alt="">
-				</div>
-			</div>
-			<!--END head -->
-			<!-- line -->
-			<div class="line"></div>
-			<!--END line -->
+    <head>
+        <meta charset="UTF-8" />
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
 
-			{% block content %}
-		
-			{% endblock %}
+    <body>
+        <div id="global__wrapper" class="global__wrapper">
+            <!-- leftnav -->
+            <div class="leftnav">
+                <a data-click="catalog-open" href="">
+                    <img src="img/nav_1.svg" alt="" />
+                </a>
+                <a href="/">
+                    <img src="img/nav_2.svg" alt="" />
+                </a>
+                <a href="/">
+                    <img src="img/nav_3.svg" alt="" />
+                </a>
+            </div>
+            <!--END leftnav -->
+            <!-- content -->
+            <div class="content">
+                <!-- head -->
+                <div class="head">
+                    <a href="/" class="head__logo">
+                        <img src="img/logo.svg" alt="" />
+                    </a>
+                    <div class="head__navblock">
+                        <ul class="head__contacts">
+                            <li>
+                                <a href="tel:+7 (495) 642-33-81 "
+                                    >+7 (495) 642-33-81</a
+                                >
+                            </li>
+                            <li>
+                                <a href="mailto:sm@rgstroy.ru "
+                                    >sm@rgstroy.ru</a
+                                >
+                            </li>
+                            <li>Пн-Пт 9:00 - 18:00</li>
+                        </ul>
+                        <ul class="head__nav">
+                            <li><a href="/">Оплата</a></li>
+                            <li><a href="/">Доставка</a></li>
+                            <li><a href="/">О компании</a></li>
+                            <li><a href="/">Как сделать заказ</a></li>
+                            <li><a href="/">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="head__cart">
+                        <div class="head__cart__count">4</div>
+                        <img src="img/cart.svg" alt="" />
+                    </div>
+                </div>
+                <!--END head -->
+                <!-- line -->
+                <div class="line"></div>
+                <!--END line -->
 
-			<!-- content__footer -->
-			<div class="content__footer">
-				<div class="content__footer__top">
-					<a href="" class="content__footer__logo">
-						<img src="img/footer__logo.svg" alt="">
-					</a>
-					<ul class="content__footer__nav">
-						<li><a href="">Каталог</a></li>
-						<li><a href="">Монтаж</a></li>
-						<li><a href="">Оплата</a></li>
-						<li><a href="">Как сделать заказ</a></li>
-						<li><a href="">О компании</a></li>
-						<li><a href="">Справочник</a></li>
-						<li><a href="">Контакты</a></li>
-					</ul>
-				</div>
-				<div class="content__footer__bottom">
-					<div class="content__footer__bottom__copyright">© 2006-2019 Официальный сайт компании «РусГрадСтрой»</div>
-					<div class="content__footer__bottom__loc">127591, г. Москва,Керамический проезд дом 53, корпус 1, офис 2</div>
-				</div>
-			</div>
-			<!--END content__footer -->
-			
-			<!-- upbtn -->
-			<a href="#global__wrapper" data-click="scroll" class="upbtn">
-				<img src="img/up.svg" alt="">
-			</a>
-			<!--END upbtn -->
+                {% block content %} {% endblock %}
 
-			<!-- catalog -->
-			<div class="catalog" data-modal="catalog">
-				<div data-click="catalog-close" class="catalog__close">
-					<img src="img/catalog_close.svg" alt="">
-				</div>
-				<div class="catalog__head">
-					<div class="catalog__logo">
-						<img src="img/catalog__logo.svg" alt="">
-					</div>
-					<div class="catalog__title">Каталог</div>
-				</div>
-				<div class="catalog__head__items">
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_1.svg" data-icon-active="img/catalog_active_1.svg"></span>
-						<span class="catalog__head__item__title">Фундаментные балки (БФ)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_2.svg" data-icon-active="img/catalog_active_2.svg"></span>
-						<span class="catalog__head__item__title">Плиты перекрытия (ПК)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_3.svg" data-icon-active="img/catalog_active_3.svg"></span>
-						<span class="catalog__head__item__title">Фундаментные (ФБС)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_4.svg" data-icon-active="img/catalog_active_4.svg"></span>
-						<span class="catalog__head__item__title">Перемычки (ПБ)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_5.svg" data-icon-active="img/catalog_active_5.svg"></span>
-						<span class="catalog__head__item__title">Фундаментные подушки (ФЛ)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_6.svg" data-icon-active="img/catalog_active_6.svg"></span>
-						<span class="catalog__head__item__title">Кольца колодезные (КС)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_7.svg" data-icon-active="img/catalog_active_7.svg"></span>
-						<span class="catalog__head__item__title">Колодцы унифицированные (ВГ, ВС)</span>
-					</a>
-					<!--END catalog__head__item -->					
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_8.svg" data-icon-active="img/catalog_active_8.svg"></span>
-						<span class="catalog__head__item__title">Лотки железобетонные (Л, П)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_9.svg" data-icon-active="img/catalog_active_9.svg"></span>
-						<span class="catalog__head__item__title">Лестничные ступени (ЛС)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_10.svg" data-icon-active="img/catalog_active_10.svg"></span>
-						<span class="catalog__head__item__title">Плиты плоские (ПТП)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_11.svg" data-icon-active="img/catalog_active_11.svg"></span>
-						<span class="catalog__head__item__title">Плиты перекрытий ребристые</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_12.svg" data-icon-active="img/catalog_active_12.svg"></span>
-						<span class="catalog__head__item__title">Прогоны (ПРГ)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_13.svg" data-icon-active="img/catalog_active_13.svg"></span>
-						<span class="catalog__head__item__title">Плиты канальные (ВП)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_14.svg" data-icon-active="img/catalog_active_14.svg"></span>
-						<span class="catalog__head__item__title">Опорные подушки (ОП)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_15.svg" data-icon-active="img/catalog_active_15.svg"></span>
-						<span class="catalog__head__item__title">Плиты дорожные (ПД, ПДП)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_16.svg" data-icon-active="img/catalog_active_16.svg"></span>
-						<span class="catalog__head__item__title">Балки железобетонные (Б, БСД)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_17.svg" data-icon-active="img/catalog_active_17.svg"></span>
-						<span class="catalog__head__item__title">Каналы и тоннели (ПД, ПТ)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_18.svg" data-icon-active="img/catalog_active_18.svg"></span>
-						<span class="catalog__head__item__title">Забор железобетонный (ПО, ФО)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_19.svg" data-icon-active="img/catalog_active_19.svg"></span>
-						<span class="catalog__head__item__title">Опоры ЛЭП</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_20.svg" data-icon-active="img/catalog_active_20.svg"></span>
-						<span class="catalog__head__item__title">Лестничные марши (ЛМ)</span>
-					</a>
-					<!--END catalog__head__item -->
-					<!-- catalog__head__item -->
-					<a href="/" class="catalog__head__item">
-						<span class="catalog__head__item__icon" data-icon-default="img/catalog_21.svg" data-icon-active="img/catalog_active_21.svg"></span>
-						<span class="catalog__head__item__title">Столбы ограждения (С, СТ)</span>
-					</a>
-					<!--END catalog__head__item -->
-				</div>
-			</div>
-			<!--END catalog -->
-		</div>
-		<!--END content -->
-	</div>
-	
-	
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/scroll.js"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=<b3b5d811-9ed0-4caa-a770-c9d9d2320009>&lang=ru_RU"></script>
-	<script src="js/main.js"></script>
-</body>
+                <!-- content__footer -->
+                <div class="content__footer">
+                    <div class="content__footer__top">
+                        <a href="" class="content__footer__logo">
+                            <img src="img/footer__logo.svg" alt="" />
+                        </a>
+                        <ul class="content__footer__nav">
+                            <li><a href="">Каталог</a></li>
+                            <li><a href="">Монтаж</a></li>
+                            <li><a href="">Оплата</a></li>
+                            <li><a href="">Как сделать заказ</a></li>
+                            <li><a href="">О компании</a></li>
+                            <li><a href="">Справочник</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="content__footer__bottom">
+                        <div class="content__footer__bottom__copyright">
+                            © 2006-2019 Официальный сайт компании «РусГрадСтрой»
+                        </div>
+                        <div class="content__footer__bottom__loc">
+                            127591, г. Москва,Керамический проезд дом 53, корпус
+                            1, офис 2
+                        </div>
+                    </div>
+                </div>
+                <!--END content__footer -->
+
+                <!-- upbtn -->
+                <a href="#global__wrapper" data-click="scroll" class="upbtn">
+                    <img src="img/up.svg" alt="" />
+                </a>
+                <!--END upbtn -->
+
+                <!-- catalog -->
+                <div class="catalog" data-modal="catalog">
+                    <div data-click="catalog-close" class="catalog__close">
+                        <img src="img/catalog_close.svg" alt="" />
+                    </div>
+                    <div class="catalog__head">
+                        <div class="catalog__logo">
+                            <img src="img/catalog__logo.svg" alt="" />
+                        </div>
+                        <div class="catalog__title">Каталог</div>
+                    </div>
+                    <div class="catalog__head__items">
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_1.svg"
+                                data-icon-active="img/catalog_active_1.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Фундаментные балки (БФ)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_2.svg"
+                                data-icon-active="img/catalog_active_2.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Плиты перекрытия (ПК)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_3.svg"
+                                data-icon-active="img/catalog_active_3.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Фундаментные (ФБС)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_4.svg"
+                                data-icon-active="img/catalog_active_4.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Перемычки (ПБ)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_5.svg"
+                                data-icon-active="img/catalog_active_5.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Фундаментные подушки (ФЛ)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_6.svg"
+                                data-icon-active="img/catalog_active_6.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Кольца колодезные (КС)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_7.svg"
+                                data-icon-active="img/catalog_active_7.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Колодцы унифицированные (ВГ, ВС)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_8.svg"
+                                data-icon-active="img/catalog_active_8.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Лотки железобетонные (Л, П)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_9.svg"
+                                data-icon-active="img/catalog_active_9.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Лестничные ступени (ЛС)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_10.svg"
+                                data-icon-active="img/catalog_active_10.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Плиты плоские (ПТП)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_11.svg"
+                                data-icon-active="img/catalog_active_11.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Плиты перекрытий ребристые</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_12.svg"
+                                data-icon-active="img/catalog_active_12.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Прогоны (ПРГ)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_13.svg"
+                                data-icon-active="img/catalog_active_13.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Плиты канальные (ВП)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_14.svg"
+                                data-icon-active="img/catalog_active_14.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Опорные подушки (ОП)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_15.svg"
+                                data-icon-active="img/catalog_active_15.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Плиты дорожные (ПД, ПДП)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_16.svg"
+                                data-icon-active="img/catalog_active_16.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Балки железобетонные (Б, БСД)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_17.svg"
+                                data-icon-active="img/catalog_active_17.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Каналы и тоннели (ПД, ПТ)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_18.svg"
+                                data-icon-active="img/catalog_active_18.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Забор железобетонный (ПО, ФО)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_19.svg"
+                                data-icon-active="img/catalog_active_19.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Опоры ЛЭП</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_20.svg"
+                                data-icon-active="img/catalog_active_20.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Лестничные марши (ЛМ)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                        <!-- catalog__head__item -->
+                        <a href="/" class="catalog__head__item">
+                            <span
+                                class="catalog__head__item__icon"
+                                data-icon-default="img/catalog_21.svg"
+                                data-icon-active="img/catalog_active_21.svg"
+                            ></span>
+                            <span class="catalog__head__item__title"
+                                >Столбы ограждения (С, СТ)</span
+                            >
+                        </a>
+                        <!--END catalog__head__item -->
+                    </div>
+                </div>
+                <!--END catalog -->
+
+                <!-- search -->
+                <div class="search" style="display: none;">
+                    <div class="search__title">Поиск</div>
+                    <form class="search__form" action="/">
+                        <input type="text" />
+                        <button>
+                            <img src="img/search.svg" alt="" />
+                        </button>
+                    </form>
+                </div>
+                <!--END search -->
+            </div>
+            <!--END content -->
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/scroll.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=<b3b5d811-9ed0-4caa-a770-c9d9d2320009>&lang=ru_RU"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

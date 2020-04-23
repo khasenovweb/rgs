@@ -1,0 +1,11 @@
+.card__product__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card__product__info__left {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(auto-fill, minmax(-webkit-max-content, 0));
+  grid-template-rows: repeat(auto-fill, minmax(max-content, 0));
+  grid-gap: 40px;
+}
