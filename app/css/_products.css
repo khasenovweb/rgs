@@ -84,13 +84,10 @@
 }
 .products {
   margin-top: 23px;
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  -webkit-box-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-          justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .product {
   background: #F7F7F7;
@@ -113,12 +110,9 @@
 }
 .product__content {
   margin-top: 12px;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-          justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .product__img {
   width: 110px;

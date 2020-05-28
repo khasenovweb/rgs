@@ -88,20 +88,14 @@
 .content__footer__top {
   background-color: #FBB03B;
   padding: 30px;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .content__footer__nav {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
 }
 .content__footer__nav li {
   margin-left: 46px;
@@ -111,12 +105,9 @@
   font-size: 18px;
 }
 .content__footer__bottom {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 30px;
   background-color: #4D4D4D;
 }

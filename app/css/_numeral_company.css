@@ -88,13 +88,9 @@
   padding-left: 70px;
   padding-right: 70px;
   margin-left: -70px;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .company__numeral .line {
   margin-top: 160px;
@@ -108,21 +104,14 @@
   color: white;
 }
 .company__numeral__items {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-          justify-content: center;
+  align-items: flex-start;
+  justify-content: center;
 }
 .company__numeral__item {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin: 0px 65px;
   margin-top: 80px;
 }
