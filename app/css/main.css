@@ -745,6 +745,7 @@ p {
 .card__product__info {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
 }
 .card__product__info__left {
   display: grid;
@@ -752,4 +753,23 @@ p {
   grid-template-rows: repeat(auto-fill, minmax(-webkit-max-content, 0));
   grid-template-rows: repeat(auto-fill, minmax(max-content, 0));
   grid-gap: 40px;
+  padding: 45px;
+}
+.card__product__info__left__item__label {
+  font-weight: 500;
+  font-size: 24px;
+}
+.card__product__info__left__item__title {
+  font-weight: 900;
+  font-size: 36px;
+  margin-top: 10px;
+}
+.card__product__info__right__text p {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.card__product__more {
+  padding: 20px 90px;
+  margin-top: 30px;
 }
